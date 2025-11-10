@@ -11,49 +11,34 @@ body {
 }
 
 .container {
-  max-width: 1100px;
-  width: 90%;
+  max-width: 1000px;
+  width: 92%;
   background-color: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(8px);
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  padding: 50px;
+  padding: 35px 28px;
   overflow-y: auto;
-  max-height: 92vh;
+  max-height: 95vh;
 }
 
 h1 {
   text-align: center;
-  font-size: 2.4rem;
-  margin-bottom: 36px;
+  font-size: 2.2rem;
+  margin-bottom: 26px;
   color: #00b4d8;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
-h2 {
-  margin-top: 28px;
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-  color: #90e0ef;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  padding-bottom: 4px;
+.menu {
+  white-space: pre-wrap;
+  font-size: 1rem;
+  line-height: 1.45;
 }
 
-p {
-  margin: 3px 0;          /* tighter vertical spacing */
-  line-height: 1.35;      /* reduced from 1.6 */
-  font-size: 1.05rem;
-}
-
-strong {
-  color: #caf0f8;
-}
-
-.footer {
-  margin-top: 36px;
-  text-align: center;
-  font-size: 0.95rem;
-  opacity: 0.8;
+.menu pre {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 ::-webkit-scrollbar {
@@ -65,4 +50,21 @@ strong {
 }
 ::-webkit-scrollbar-track {
   background: transparent;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px 18px;
+    width: 94%;
+    max-height: 95vh;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .menu {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
 }
